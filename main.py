@@ -1,11 +1,13 @@
+import os
 import requests
 import pandas as pd
 import time
 from ta.momentum import RSIIndicator
 from ta.trend import MACD, EMAIndicator
 
-KEN = os.getenv("TOKEN")
+TOKEN = os.getenv("TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
+
 
 SYMBOLS = ["SOLUSDT", "ETHUSDT", "BTCUSDT", "ADAUSDT"]
 INTERVAL = "1h"
